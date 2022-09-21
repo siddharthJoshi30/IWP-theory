@@ -2,88 +2,88 @@
   "TamilNadu":[{
             "District_Name" : "Vellore",
              "Date" : "09-03-2020",
-             "Infected": "1000",
-             "Recovered": "500",
-             "Vaccinated": "200000"
+             "Infected": 1000,
+             "Recovered": 500,
+             "Vaccinated": 200000
             },
 
             {
               "District_Name" : "Nellore",
                "Date" : "10-03-2020",
-               "Infected": "2000",
-               "Recovered": "200",
-               "Vaccinated": "100000"
+               "Infected": 2000,
+               "Recovered": 200,
+               "Vaccinated": 100000
             },
             {
                 "District_Name" : "Chennai",
                  "Date" : "11-03-2020",
-                 "Infected": "3000",
-                 "Recovered": "1000",
-                 "Vaccinated": "300000"
+                 "Infected": 3000,
+                 "Recovered": 1000,
+                 "Vaccinated": 300000
                 
             },
             {
                   "District_Name" : "Rameshwaram",
                   "Date" : "12-03-2020",
-                  "Infected": "4000",
-                  "Recovered": "100",
-                  "Vaccinated": "500000"
+                  "Infected": 4000,
+                  "Recovered": 100,
+                  "Vaccinated": 500000
             },
             {
                 "District_Name" : "Pondicherry",
                  "Date" : "13-03-2020",
-                 "Infected": "5000",
-                 "Recovered": "50",
-                 "Vaccinated": "300000"
+                 "Infected": 5000,
+                 "Recovered": 50,
+                 "Vaccinated": 300000
             }, 
             {
               "District_Name" : "Coimbatore",
               "Date" : "14-03-2020",
-              "Infected": "6000",
-              "Recovered": "250",
-              "Vaccinated": "800000"              
+              "Infected": 6000,
+              "Recovered": 250,
+              "Vaccinated": 800000              
             },
             {
               "District_Name" : "Madurai",
               "Date" : "14-03-2020",
-              "Infected": "7000",
-              "Recovered": "1000",
-              "Vaccinated": "90000"              
+              "Infected": 7000,
+              "Recovered": 1000,
+              "Vaccinated": 90000             
             },
             {
               "District_Name" : "Salem",
               "Date" : "15-03-2020",
-              "Infected": "8000",
-              "Recovered": "10",
-              "Vaccinated": "30000"              
+              "Infected": 8000,
+              "Recovered": 10,
+              "Vaccinated": 30000              
             },
             {
               "District_Name" : "Tiruchirappalli",
               "Date" : "16-03-2020",
-              "Infected": "9000",
-              "Recovered": "150",
-              "Vaccinated": "100000"
+              "Infected": 9000,
+              "Recovered": 150,
+              "Vaccinated": 100000
             },
             {
               "District_Name" : "Erode",
               "Date" : "17-03-2020",
-              "Infected": "5000",
-              "Recovered": "450",
-              "Vaccinated": "350000"              
+              "Infected": 5000,
+              "Recovered": 450,
+              "Vaccinated": 350000             
             },
             {
               "District_Name" : "Hosur",
               "Date" : "17-03-2020",
-              "Infected": "90000",
-              "Recovered": "10000",
-              "Vaccinated": "450000"
+              "Infected": 90000,
+              "Recovered": 10000,
+              "Vaccinated": 450000
             },
              {
               "District_Name" : "Karikudi",
               "Date" : "18-03-2020",
-              "Infected": "3000",
-              "Recovered": "1000",
-              "Vaccinated": "300000"
+              "Infected": 3000,
+              "Recovered": 1000,
+              "Vaccinated": 300000
             }
 
 ]}
