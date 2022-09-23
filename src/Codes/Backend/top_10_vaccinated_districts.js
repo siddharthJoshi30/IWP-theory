@@ -7,7 +7,7 @@ const arr_district=[]
 
 //console.log(data.TamilNadu.length)
 
-router.post('/sample' ,async(req,res)=>{
+router.post('/districts' ,async(req,res)=>{
     var sum=0
     const obj={
         state:req.body.state

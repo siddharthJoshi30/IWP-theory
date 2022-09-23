@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 
-router.post('/sample',async(req,res)=>{
+router.post('/Infection',async(req,res)=>{
     var sum=0
     const obj={
         state:req.body.state

@@ -4,7 +4,7 @@ const router=express.Router()
 
 
 
-router.post('/sample' ,async(req,res)=>{
+router.post('/Recovery' ,async(req,res)=>{
     var sum=0
     const obj={
         state:req.body.state
