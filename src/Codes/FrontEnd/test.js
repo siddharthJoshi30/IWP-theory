@@ -11,8 +11,11 @@
       contentType: 'application/json',
       dataType:'json',
       success:(res, textStatus, jQxhr)=>{
-        
-        document.getElementById("p1").innerHTML="Districts:"+res.district
+        let district=res.district
+        console.log(district)
+        for(let i=0;i<10;i++){
+          document.getElementById("district-"+i).innerHTML=district[i]
+        }
       }
 
     })

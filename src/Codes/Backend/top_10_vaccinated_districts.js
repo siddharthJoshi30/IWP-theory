@@ -35,10 +35,10 @@ router.post('/districts' ,async(req,res)=>{
         }
     }
     const districts={
-        district:arr_district[0]
+        district:arr_district
     }
     return res.send(districts)
-    return arr_district[0]
+    
 })
 
 module.exports=router
