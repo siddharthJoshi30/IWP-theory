@@ -1,30 +1,27 @@
-const data=require('./ObjectCreation')
-const express = require('express');
+const express = require('express')
+const data = require('./ObjectCreation')
+
 const router = express.Router();
 
+router.post('/infection', async (req, res) => {
+    try {
+        const obj = { state: req.body.state } 
+        var sum = 0
+        const temp_state=obj.state
+       
+        for(let i=0;i<data[temp_state].length;i++)
+        {
+            sum=sum+parseInt(data[temp_state][i].Infected)
+        }
+        return res.status(200).send({sum})
 
-router.post('/Infection',async(req,res)=>{
-    var sum=0
-    const obj={
-        state:req.body.state
+    } catch(e){
+        res.status(400).send(e)
     }
-    var temp_state=obj.state
-   
-    for(let i=0;i<data[temp_state].length;i++){
-        sum+=data[temp_state][i].Infected
-    }
-    const Sum={
-        sum:sum
-    }
-    return res.send(Sum)
 })
-module.exports=router
-/*function displayMonthly(){
-    for(let i=0;i<data.TamilNadu.length;i++)
-    {
-        sum+=data.TamilNadu[i].Infected
-    }
-    return sum
-}*/
-//module.exports=displayMonthly()
+
+
+
+module.exports = router
+
 
