@@ -13,7 +13,7 @@
       success:(res)=>{
         let districts=res.districts
         let vaccinated=res.vaccinated
-        console.log(res)
+        
         for(let i=0;i<10;i++){
           document.getElementById("district-"+i).innerHTML=districts[i]+":"+vaccinated[i]
           

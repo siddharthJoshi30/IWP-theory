@@ -37,7 +37,8 @@ router.post('/districts' ,async(req,res)=>{
                 }
             }
         }
-    
+        
+        
         const districts={
             districts:arr_district,
             vaccinated:arr_vaccinated
