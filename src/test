@@ -1,0 +1,98 @@
+const getDistricts = () => {
+  var state = document.getElementById("n1").value
+  const data = {
+    state: state
+  }
+  const json_data = JSON.stringify(data)
+  console.log(json_data)
+  $.ajax({
+    url: "http://localhost:3000/districts",
+    type: "POST",
+    data: json_data,
+    contentType: 'application/json',
+    dataType: 'json',
+    success: (res) => {
+      let topVacDistricts = res.districts
+      console.log(res.districts)
+      for (let i = 0; i < 10; i++) {
+        //document.getElementById("district-"+i).innerHTML=districts[i]
+
+        districtName = topVacDistricts.districts
+        vaccinatePeople = topVacDistricts.vaccinated
+
+        var table = document.createElement("table")
+        var tr = table.insertRow(-1)
+
+        var th = document.createElement("th")
+        th.innerHTML = 'District'
+        tr.appendChild(th)
+
+        var th = document.createElement("th")
+        th.innerHTML = 'No of Vaccinated people'
+        tr.appendChild(th)
+
+        for (var i = 0; i < districtNames.length; i++) {
+          var tr = table.insertRow(-1)
+
+          var cell = tr.insertCell(-1)
+          cell.innerHTML = districtName[i]
+
+          var cell = tr.insertCell(-1)
+          cell.innerHTML = vaccinatePeople
+        }
+
+        var div = document.getElementById("display");
+        div.appendChild(table);
+
+      }
+    }
+
+  })
+
+}
+
+const getMonthlyInfection = () => {
+
+  var state = document.getElementById("n1").value
+  const data = JSON.stringify({ state })
+
+  $.ajax({
+    url: "http://localhost:3000/infection",
+    type: "POST",
+    data,
+    contentType: 'application/json',
+    dataType: 'json',
+    success: (res, textStatus, jQxhr) => {
+      document.getElementById("p1").innerHTML = "Infection:" + res.sum
+    }
+  })
+}
+
+const getRecoveries = () => {
+  var state = document.getElementById("n1").value
+  const data = {
+    state: state
+  }
+  const json_data = JSON.stringify(data)
+  console.log(json_data)
+  $.ajax({
+    url: "http://localhost:3000/Recovery",
+    type: "POST",
+    data: json_data,
+    contentType: 'application/json',
+    dataType: 'json',
+    success: (res, textStatus, jQxhr) => {
+
+      document.getElementById("p1").innerHTML = "Recovery:" + res.sum
+    }
+
+  })
+
+}
+
+
+
+
+
+
+

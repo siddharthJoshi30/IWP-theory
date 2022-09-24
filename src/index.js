@@ -2,8 +2,8 @@ const express=require('express')
 const cors = require("cors")
 
 const data=require('./Codes/Backend/ObjectCreation')
-const monthlyInfectionRouter=require('./Codes/Backend/monthlyInfection')
-const RecoveredCountRouter=require('./Codes/Backend/RecoveredCount')
+const monthlyInfectionRecoveryRouter=require('./Codes/Backend/monthlyInfectionRecovery')
+//const RecoveredCountRouter=require('./Codes/Backend/RecoveredCount')
 const VaccinatedDistricts=require('./Codes/Backend/top_10_vaccinated_districts')
 
 
@@ -12,8 +12,8 @@ const port=process.env.PORT || 3000
 
 app.use(cors())
 app.use(express.json())
-app.use(RecoveredCountRouter)
-app.use(monthlyInfectionRouter)
+//app.use(RecoveredCountRouter)
+app.use(monthlyInfectionRecoveryRouter)
 app.use(VaccinatedDistricts)
 
 
