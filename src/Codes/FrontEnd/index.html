@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="test.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+</head>
+<body>
+    <div id="header">
+        <h3 id="headerElement1">Covid.</h3>
+        <div id="headerElement2">
+            <button class="headerButton">Features</button>
+            <button class="headerButton">Compare</button>
+            <button class="headerButton">Support</button>
+            <button class="headerButton">Blog</button>
+        </div>
+        <div id="headerElement3">
+            <button id="loginBtn">Login</button>
+            <button id="RegisterBtn">Register</button>
+        </div>
+    </div>
+
+
+    <div id="container">
+        <div id="heading"> 
+            <h1>Top Ten vaccinated districts</h1>
+        </div>
+        <div id="content">
+            
+            <form action="#">
+                <div class="search-bar">
+                    <select name="state" id="state">
+                        <option value="" disabled selected hidden>Choose a state</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    </select>
+                </div>
+
+                <div class="btn-bar">
+                    <button id="btn" onclick="getDistricts()">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="display">
+
+        </div>
+   </div>
+</body>
+</body>
+</html>
+
+

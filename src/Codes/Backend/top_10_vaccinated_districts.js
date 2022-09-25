@@ -1,15 +1,19 @@
 const data=require('./ObjectCreation')
 const express=require('express')
-const router=express.Router()
+const router=express.Router() // Creating a Router
 
 const arr_vaccinated=[]
 const arr_district=[]
 
-//console.log(data.TamilNadu.length)
+
+//API Creation at Router '/districts'
 
 router.post('/districts' ,async(req,res)=>{
     try{
-        const obj={state:req.body.state}    
+        const obj={state:req.body.state}  //User Input from Client-Side
+        
+        //Getting vaccinated districts and district names in an array
+
         var temp_state=obj.state
             let j=0
             for(let i=0;i<data[temp_state].length;i++){
@@ -19,11 +23,12 @@ router.post('/districts' ,async(req,res)=>{
                     j++
                 }
             }
-        
 
-        for(let i=0;i<data[temp_state].length-1;i++)
+        // Sorting according to vaccinated districts
+        
+        for(let i=0;i<arr_vaccinated.length-1;i++)
         {
-            for(let j=0;j<data[temp_state].length-1;j++)
+            for(let j=0;j<arr_vaccinated.length-1;j++)
             {
                 if(arr_vaccinated[j]<arr_vaccinated[j+1])
                 {
@@ -38,12 +43,12 @@ router.post('/districts' ,async(req,res)=>{
             }
         }
         
-        
         const districts={
             districts:arr_district,
             vaccinated:arr_vaccinated
         }
-        return res.status(200).send(districts)
+
+        return res.status(200).send(districts) //Sending response back to client in JS Object
 
     }catch(e){
         res.status(400).send(e)
@@ -51,4 +56,4 @@ router.post('/districts' ,async(req,res)=>{
     
 })
 
-module.exports=router
+module.exports=router //Globally Exporting router

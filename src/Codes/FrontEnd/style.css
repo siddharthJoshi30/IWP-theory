@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #A5F1E9;
+}
+
+#container,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    margin-top: 150px;
+}
+
+#heading {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.btn-bar {
+    margin: 40px;
+}
+
+#btn {
+    font-family: arial;
+    color: white !important;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #5BB5A2;
+    background: #5BB5A2;
+    text-decoration: none;
+}
+
+#btn:hover {
+    color: white !important;
+    background: #5BB5A2;
+    text-decoration: none;
+}
+
+table,th,td {
+    border: solid;
+    background-color: whitesmoke;
+}
+
+th,td {
+    padding: 10px;
+    font-size: larger;
+}
+
+th {
+    background-color: #f0e7f4;
+}
+
+.searchbar {
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+#header {
+    background-color: white;
+    width: 100%;
+    padding: 1px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#headerElement1 {
+    font-size: 32px;
+    width: 93px;
+    height: 32px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    color: #5BB5A2;
+}
+
+#headerElement2 {
+    padding: 35px;
+    display: inline-block;
+}
+
+.headerButton{
+    border:none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+}
+
+#headerElement3{
+    padding: 20px;
+    display: inline-block;
+}
+
+#loginBtn{
+    font-size: 22px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    color: #5BB5A2;
+    border: none;
+    background-color: white;
+    margin: 15px;
+}
+
+#RegisterBtn {
+    font-size: 22px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    color: white;
+    border: none;
+    background-color: #5BB5A2;
+    border-radius: 5px;
+}
+
+a{
+    font-size: 32px; 
+}
